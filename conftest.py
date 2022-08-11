@@ -4,7 +4,7 @@ from selenium import webdriver
 
 
 def pytest_addoption(parser):
-    parser.addoption('--browser_name', action='store', default=None,
+    parser.addoption('--browser_name', action='store', default="chrome",
                      help="Choose browser: chrome or firefox")
     parser.addoption("--browser_headless", action="store_true", default=False,
                      help="укажи --browser_headless для безголового режима")
